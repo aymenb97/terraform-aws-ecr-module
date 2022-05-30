@@ -3,7 +3,8 @@ variable "repo_name" {
   type        = string
 }
 variable "image_tag_mutability" {
-  type = string
+  description = "Enable tag mutability to prevent image tags from being overwritten"
+  type        = string
 
 }
 variable "tags" {
@@ -13,6 +14,6 @@ variable "tags" {
 }
 variable "scan_on_push" {
   type        = bool
-  description = "value"
+  description = "Enable ECR image scanning to help identofy software vulnerabilities in your container images."
 
 }
